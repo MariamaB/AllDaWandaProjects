@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/lightrosa"
+    tools:context="com.lischke.miriam.tictactoe.Game">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/anzeigeDefault"
+        android:id="@+id/textView"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:background="@color/rosa"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hinweis"
+        android:id="@+id/textView2"
+        android:textColor="@color/darkred"
+        android:background="@color/darkgrey"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rot"
+        android:id="@+id/red"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="selectAndEnable" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/schwarz"
+        android:id="@+id/black"
+        android:layout_above="@+id/red"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="selectAndEnable" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/computer"
+        android:id="@+id/computer"
+        android:layout_alignTop="@+id/red"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:checked="false"
+        android:enabled="true"
+        android:clickable="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mensch"
+        android:id="@+id/human"
+        android:layout_above="@+id/computer"
+        android:layout_alignLeft="@+id/computer"
+        android:layout_alignStart="@+id/computer"
+        android:checked="false"
+        android:enabled="true"
+        android:clickable="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:id="@+id/start"
+        android:layout_above="@+id/black"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignStart="@+id/button7"
+        android:nestedScrollingEnabled="false"
+        android:onClick="start" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:id="@+id/stop"
+        android:layout_below="@+id/button7"
+        android:layout_alignRight="@+id/button9"
+        android:layout_alignEnd="@+id/button9"
+        android:onClick="stop" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/neustart"
+        android:id="@+id/newGame"
+        android:layout_alignTop="@+id/stop"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:id="@+id/button7"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_marginBottom="46dp"
+        android:layout_above="@+id/start"
+        android:layout_toLeftOf="@+id/button8"
+        android:layout_toStartOf="@+id/button8"
+        android:onClick="duringGame" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:id="@+id/button8"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_alignTop="@+id/button7"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/button7"
+        android:onClick="duringGame" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:id="@+id/button9"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_alignTop="@+id/button8"
+        android:layout_toRightOf="@+id/button8"
+        android:layout_toEndOf="@+id/button8"
+        android:onClick="duringGame" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:id="@+id/button4"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_alignTop="@+id/button6"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignStart="@+id/button7"
+        android:onClick="duringGame" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:id="@+id/button1"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_above="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:onClick="duringGame" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:id="@+id/button5"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_above="@+id/button7"
+        android:layout_toRightOf="@+id/button7"
+        android:layout_toEndOf="@+id/button7"
+        android:onClick="duringGame" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:id="@+id/button6"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_above="@+id/button9"
+        android:layout_toRightOf="@+id/button8"
+        android:layout_toEndOf="@+id/button8"
+        android:onClick="duringGame" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:id="@+id/button2"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:textColor="@color/redC"
+        android:layout_alignTop="@+id/button1"
+        android:layout_toRightOf="@+id/button1"
+        android:layout_toEndOf="@+id/button1"
+        android:onClick="duringGame" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:id="@+id/button3"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2"
+        android:onClick="duringGame" />
+
+
+</RelativeLayout>

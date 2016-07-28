@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="anzeigeDefault">Willkommen! Drücken Sie auf Start um Ihre Spielvariante zu wählen.</string>
+    <string name="anzeigeSpielvariante">Wähle Jetzt eine Spielvariante</string>
+    <string name="anzeigeFarbe">Zur Zeit ist nur die Spielvariante Mensch vs. Mensch möglich! Wähle jetzt eine Farbe.</string>
+    <string name="anzeigeReady">Klicke jetzt auf Start um dein spiel zu starten.</string>
+    <string name="anzeigeRot">Los gehts! Rot beginnt.</string>
+    <string name="anzeigeSchwarz">Los gehts! Schwarz beginnt.</string>
+    <string name="hinweis">Hinweis: Maschine spielt stets in schwarz.</string>
+
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="neustart">Neustart</string>
+
+    <string name="schwarz">Schwarz beginnt</string>
+    <string name="rot">Rot beginnt</string>
+    <string name="mensch">Mensch vs Mensch</string>
+    <string name="computer">Computer vs Mensch</string>
+    <string name="O">O</string>
+    <string name="X">X</string>
+</resources>

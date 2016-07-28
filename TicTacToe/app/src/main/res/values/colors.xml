@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darkpink">#CC0066</color>
+    <color name="darkpurple">#990066</color>
+    <color name="pink">#FF6699</color>
+    <color name="rosa">#FF99CC</color>
+    <color name="lightgrey">#E0E0E0</color>
+    <color name="darkgrey">#707070</color>
+    <color name="textColor">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkred">#600000</color>
+    <color name="lightrosa">#ffe6f3</color>
+    <color name="redC">#cc0000</color>
+</resources>
